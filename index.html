@@ -15,9 +15,9 @@
             <div class="grid grid-cols-4 grid-rows-5 gap-3 w-3/3 mx-auto">
                 <div class="col-start-1 col-end-4"><textarea type="text" value="" id="c" class="border border-4 border-gray w-full"></textarea></div>
                 <div class="bg-[#a1a1aa] grid place-items-center border border-4 border-gray">c</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">1</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">2</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">3</div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><a href="#c" class="button">1</a></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button class="button" id="c">2</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><input class="button" type="button" value="3" onclick=""/></div>
                 <div class="bg-[#a1a1aa] grid place-items-center">/</div>
                 <div class="bg-[#a1a1aa] grid place-items-center">4</div>
                 <div class="bg-[#a1a1aa] grid place-items-center">5</div>
@@ -35,6 +35,8 @@
             </div>
 
         </section>
-
+        function dis(value) {
+            document.getElementById("screen").value += value;
+            }
     </body>
 </html>
