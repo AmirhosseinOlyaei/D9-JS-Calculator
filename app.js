@@ -1,5 +1,5 @@
     function solve() {
-        let y = eval([2+2]*10);
+        let y = eval(document.getElementById('c').value);
         document.getElementById('c').value=y;
     }
 
