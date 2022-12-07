@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Calculator simulation
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="app.js"></script>
+    </head>
+    <body style="text-align:center;">
+        <header style="color:rgb(148, 119, 174)">
+            <div>Calculator</div>
+        </header><hr>
+        <section class="border place-items-center md:w-2/4 m-auto grid grid-cols-4 gap-2">
+
+                <input type="text" value="" id="c" class="col-start-1 col-end-4 border border-4 border-gray w-full" placeholder="0"></textarea>
+                <button onclick="clr()" class="bg-[#a1a1aa] grid place-items-center">c</button>
+                <button onclick="dis('1')" class="bg-[#a1a1aa] grid place-items-center w-full">1</button>
+                <button onclick="document.getElementById('c').value+='2'" class="bg-[#a1a1aa] grid place-items-center">2</button>
+                <button onclick="document.getElementById('c').value+='3'" class="bg-[#a1a1aa] grid place-items-center">3</button>
+                <button onclick="document.getElementById('c').value+='/'" class="bg-[#a1a1aa] grid place-items-center">/</button>
+                <button onclick="document.getElementById('c').value+='4'" class="bg-[#a1a1aa] grid place-items-center w-full">4</button>
+                <button onclick="document.getElementById('c').value+='5'" class="bg-[#a1a1aa] grid place-items-center">5</button>
+                <button onclick="document.getElementById('c').value+='6'" class="bg-[#a1a1aa] grid place-items-center">6</button>
+                <button onclick="document.getElementById('c').value+='*'" class="bg-[#a1a1aa] grid place-items-center">*</button>
+                <button onclick="document.getElementById('c').value+='7'" class="bg-[#a1a1aa] grid place-items-center">7</button>
+                <button onclick="document.getElementById('c').value+='8'" class="bg-[#a1a1aa] grid place-items-center">8</button>
+                <button onclick="document.getElementById('c').value+='9'" class="bg-[#a1a1aa] grid place-items-center">9</button>
+                <button onclick="document.getElementById('c').value+='-'" class="bg-[#a1a1aa] grid place-items-center">-</button>
+                <button onclick="document.getElementById('c').value+='.'" class="bg-[#a1a1aa] grid place-items-center">.</button>
+                <button onclick="document.getElementById('c').value+='0'" class="bg-[#a1a1aa] grid place-items-center">0</button>
+                <button onclick="solve()" class="bg-[#a1a1aa] grid place-items-center">=</button>
+                <button onclick="document.getElementById('c').value+='+'" class="bg-[#a1a1aa] grid place-items-center">+</button>
+
+            
+
+        </section>
+
+    </body>
+</html>
