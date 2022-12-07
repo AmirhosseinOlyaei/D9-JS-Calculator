@@ -5,6 +5,7 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scal=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="app.js"></script>
     </head>
     <body style="text-align:center;">
         <header style="color:rgb(148, 119, 174)">
@@ -14,29 +15,27 @@
 
             <div class="grid grid-cols-4 grid-rows-5 gap-3 w-3/3 mx-auto">
                 <div class="col-start-1 col-end-4"><textarea type="text" value="" id="c" class="border border-4 border-gray w-full"></textarea></div>
-                <div class="bg-[#a1a1aa] grid place-items-center border border-4 border-gray">c</div>
-                <div class="bg-[#a1a1aa] grid place-items-center"><a href="#c" class="button">1</a></div>
-                <div class="bg-[#a1a1aa] grid place-items-center"><button class="button" id="c">2</button></div>
-                <div class="bg-[#a1a1aa] grid place-items-center"><input class="button" type="button" value="3" onclick=""/></div>
-                <div class="bg-[#a1a1aa] grid place-items-center">/</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">4</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">5</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">6</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">*</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">7</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">8</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">9</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">-</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">.</div>
-                <div class="bg-[#a1a1aa] grid place-items-center">0</div>
-                <div class="bg-[#a1a1aa] grid place-items-center"><input type="button" value="=" onclick="solve()"/></div>
-                <div class="bg-[#a1a1aa] grid place-items-center">+</div>
+                <div class="bg-[#a1a1aa] grid place-items-center border border-4 border-gray"><button onclick="clr()">c</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='1'">1</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='2'">2</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='3'">3</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='/'">/</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='4'">4</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='5'">5</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='6'">6</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='*'">*</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='7'">7</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='9'">9</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='-'">-</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='.'">.</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='0'">0</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='8'">8</button></div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="solve()">=</div>
+                <div class="bg-[#a1a1aa] grid place-items-center"><button onclick="document.getElementById('c').value+='+'">+</button></div>
 
             </div>
 
         </section>
-        function dis(value) {
-            document.getElementById("screen").value += value;
-            }
+
     </body>
 </html>
